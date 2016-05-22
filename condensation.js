@@ -4,11 +4,16 @@ var async = require('async');
 var fetchImages = require('./lib/fetch-images');
 var fs = require('fs-extra');
 var path = require('path');
-var status = require('./.status');
 var stringify = require('json-stable-stringify');
 
 
 module.exports.initialize = function(condensationCb) {
+  var status = {};
+  try {
+    status = require('./.status');
+  }
+  catch(e) {
+  }
 
   var currentEpoch = Math.floor( Date.now() / 1000 );
 
