@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- 6
+- 5
+- 4
+- '0.12'
+deploy:
+  provider: npm
+  email: as.us.labs@sungardas.com
+  api_key:
+    secure: MEwJpJgnsEH1iHmlNecVozExwdxFwTdxFopxoebqVUO96DrB9rZl9X+WkM4UswzcVg0N3fgrXsHg0kQlGCBL44/Xl2NvQ+cyrl4Or4YS3qGmiII7o1lnp0rB4364NkAJmCLXolSlvrTtT69n9OKCC+StzdSfx8c88wC+G/A/qvMk75vimQFQO+FqFTaJfI1qqQe0zao7M8b2l2izvICD7KHVFOlibfof5conEiXINxokAUoGrGl211Cs3K8GhTzWOyUJmsdp48uCFaI23mTD7mhlDrSm6KYUhcY/ci/7cw4R9y1PQhIkdEtlptDjTT+va8UAESnwBNiCT8uI4HCwPPxUaehq7sW2EDqe2c8Bp0uoHfP10K9uFO9UK4TVJu0ea24pg9TuR+hnW0HP+3kbKBFWpX9CviKXn81FKfqEJYvPjCIDbLpfQC3edxd93jZeU27L4AQxTWTU7Vjnoqw6tQzSx3wQ4w5318guRfSiijnuMeSGz4o5hNLtcT2N4Z3zJPWFY2W5zGfi2MLvfhIvziFQRbp06IckWk6sCByocwbaDOuvfhXo+HNyiL9M8BYsQmlNTijotNuhpVMaUglduvuk2kgazqAITZ25rFq34sBAAHsnpvVgFd3o+fNC/RZ03ErNsvfV59EXP7GURRoLGdNnUKTGm95UXcxC5aNYIcI=
+  on:
+    tags: true
+    repo: SungardAS/particles-amazon-ami
+    node: 6
